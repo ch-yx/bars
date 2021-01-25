@@ -8,7 +8,7 @@ def charimage(str_):
     font=pygame.font.SysFont(
         #"Segoe UI",
         None,
-        30)
+        16)
     x=font.render(str_,1,(0,0,0))
 
     return numpy.frombuffer(x.get_buffer(),("u1",(x.get_width(),4)))[:,:,(3,3,3)]
